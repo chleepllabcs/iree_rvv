@@ -413,7 +413,7 @@ size_t getRISCVVVlenFromCPUFeatures(DictionaryAttr config) {
 static SmallVector<TileMxNxK>
 enumerateMatmulTileRiscv64(TypeRange elementTypes, DictionaryAttr config) {
 
-  // Data-Tiling is only implemented for the V extension
+  //Data-Tiling is only implemented for the V extension
   if (!hasFeature(config, "+v")) {
     return {};
   }

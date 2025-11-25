@@ -10,5 +10,7 @@
 #include "iree/builtins/ukernel/pack_internal.h"
 
 // Placeholder for now
+IREE_UK_PACK_TILE_FUNC_DECL(iree_uk_pack_tile_generic_riscv_64_direct)
+IREE_UK_PACK_TILE_FUNC_DECL(iree_uk_pack_tile_generic_riscv_64_transpose)
 
 #endif  // foIREE_BUILTINS_UKERNEL_ARCH_RISCV_64_PACK_RISCV_64_INTERNAL_H_

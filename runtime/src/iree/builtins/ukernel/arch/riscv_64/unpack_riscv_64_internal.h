@@ -10,5 +10,7 @@
 #include "iree/builtins/ukernel/unpack_internal.h"
 
 // Placeholder for now
+IREE_UK_UNPACK_TILE_FUNC_DECL(iree_uk_unpack_tile_generic_riscv_64_direct)
+IREE_UK_UNPACK_TILE_FUNC_DECL(iree_uk_unpack_tile_generic_riscv_64_transpose)
 
 #endif  // IREE_BUILTINS_UKERNEL_ARCH_RISCV_64_UNPACK_RISCV_64_INTERNAL_H_

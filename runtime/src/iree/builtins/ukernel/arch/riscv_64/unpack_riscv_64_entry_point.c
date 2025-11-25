@@ -11,5 +11,8 @@ iree_uk_unpack_tile_func_t iree_uk_unpack_select_tile_func_arch(
     const iree_uk_unpack_params_t* params) {
   // UnPack ukernels for riscv_64 have not been implemented yet
   // fallback to generic implementation
+  bool transpose = params->flags & IREE_UK_FLAG_UNPACK_TRANSPOSE_INNER;
+  return transpose ? iree_uk_unpack_tile_generic_riscv_64_transpose
+                     : iree_uk_unpack_tile_generic_riscv_64_direct;
   return 0;
 }
